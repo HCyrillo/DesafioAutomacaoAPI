@@ -8,7 +8,9 @@ jobs:
     steps:
     - name: Checkout Repository  # Passo para verificar o código do repositório
       uses: actions/checkout@v2
-
+      with:
+        path: DesafioAutomacaoAPI
+        
     - name: Set up JDK 11  # Passo para configurar o ambiente Java (Java Development Kit)
       uses: actions/setup-java@v2
       with:
