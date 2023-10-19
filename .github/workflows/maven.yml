@@ -1,0 +1,32 @@
+name: Automate API Tests
+on: [push]  # Dispara o pipeline quando há push para o repositório
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # Ação será executada em um ambiente Ubuntu
+
+    steps:
+    - name: Checkout Repository  # Passo para verificar o código do repositório
+      uses: actions/checkout@v2
+
+    - name: Set up JDK 11  # Passo para configurar o ambiente Java (Java Development Kit)
+      uses: actions/setup-java@v2
+      with:
+        java-version: '11'  # Use a versão do JDK necessária para o projeto
+
+    - name: Install Maven  # Passo para instalar o Maven (gerenciador de pacotes)
+      run: |
+        sudo apt update
+        sudo apt install maven
+
+    - name: Run API Tests  # Passo para executar os testes de API
+      run: mvn test  # Este comando deve ser ajustado com o comando real para executar os testes em seu projeto
+
+    - name: Publish Test Results  # Passo para publicar resultados dos testes
+      if: always()  # Será executado mesmo se houver falha nos testes
+      uses: actions/upload-artifact@v2
+      with:
+        name: test-results
+        path: target/cucumber-reports  # Verifique o caminho real para seus relatórios de testes
+
+    # Outros passos, como notificação ou implantação, podem ser adicionados aqui
