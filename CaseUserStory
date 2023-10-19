@@ -1,0 +1,22 @@
+Story:
+Como Product Analytics
+Gostaria de ter um validador de senha
+Para não permitir que nossos clientes cadastrem senhas inválidas
+
+Para entedermos melhor a história podemos ter algumas dúvidas: 
+Sobre o pedido:
+Quais são os critérios para determinar uma senha como "inválida"?
+Quais regras de validação de senha devem ser implementadas?
+Quais requisitos específicos o Product Analytics imagina?
+Existe alguma restrição de segurança que precisa ser considerada para senhas?
+
+
+Como Sugestões: 
+Ser mais específico quanto às regras de validação de senha;
+Por exemplo, exigir uma combinação de letras maiúsculas, minúsculas, números e caracteres especiais.
+
+Indicar se existe limites de comprimento de senha;
+Demonstrar exemplos de senhas inválidas ou válidas para maior clareza;
+Especificar como o validador de senha será integrado ou usado no sistema;
+Adicionar critérios de aceitação para definir comportamentos esperados e casos de teste;
+Identificar a importância da funcionalidade em relação aos objetivos de negócio, como aumentar a segurança dos dados dos clientes;
