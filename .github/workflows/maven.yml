@@ -13,7 +13,7 @@ jobs:
       uses: actions/setup-java@v2
       with:
         java-version: '11'  # Use a versão do JDK necessária para o projeto
-        distribution: 'openjdk'
+        distribution: 'adopt'
 
     - name: Install Maven  # Passo para instalar o Maven (gerenciador de pacotes)
       run: |
