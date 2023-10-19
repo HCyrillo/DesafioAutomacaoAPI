@@ -1,0 +1,27 @@
+name: Testes de API com Rest Assured
+
+on:
+  push:
+    branches:
+      - main # Substitua "main" pelo nome da sua branch principal
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout do código-fonte
+      uses: actions/checkout@v2
+
+    - name: Configurar o ambiente Java
+      uses: actions/setup-java@v2
+      with:
+        java-version: 11 # Você pode ajustar a versão do Java conforme necessário
+
+    - name: Instalar o Apache Maven
+      run: |
+        sudo apt update
+        sudo apt install maven -y
+
+    - name: Executar testes de API
+      run: mvn test
