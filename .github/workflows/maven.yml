@@ -22,7 +22,8 @@ jobs:
       run: |
         sudo apt update
         sudo apt install maven
-
+    - name: List Directory Contents
+      run: ls -la
     - name: Run API Tests  # Passo para executar os testes de API
       run: mvn test  # Este comando deve ser ajustado com o comando real para executar os testes em seu projeto
 
