@@ -24,8 +24,7 @@ jobs:
       
     - name: Run API Tests  # Passo para executar os testes de API
       run: |
-        cd /home/runner/work/DesafioAutomacaoAPI/DesafioAutomacaoAPI/
-        ls
+        cd /home/runner/work/DesafioAutomacaoAPI/DesafioAutomacaoAPI/DesafioAutomacaoAPI/DesafioAutomacaoAPI
         mvn test  # Este comando deve ser ajustado com o comando real para executar os testes em seu projeto
 
     - name: Publish Test Results  # Passo para publicar resultados dos testes
