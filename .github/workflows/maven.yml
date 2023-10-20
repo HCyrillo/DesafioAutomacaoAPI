@@ -21,16 +21,12 @@ jobs:
       run: |
         sudo apt update
         sudo apt install maven
-        
-    - name: Build with Maven
-      run: mvn clean install
-      
-    - name: List Directory Contents
-      run: ls -la
       
     - name: Run API Tests  # Passo para executar os testes de API
-      run: mvn test  # Este comando deve ser ajustado com o comando real para executar os testes em seu projeto
-
+      run: |
+        cd /home/runner/work/DesafioAutomacaoAPI/DesafioAutomacaoAPI/DesafioAutomacaoAPI/DesafioAutomacaoAPI/DesafioAutomacaoAPI
+        ls
+        mvn test 
     - name: Publish Test Results  # Passo para publicar resultados dos testes
       if: always()  # Será executado mesmo se houver falha nos testes
       uses: actions/upload-artifact@v2
