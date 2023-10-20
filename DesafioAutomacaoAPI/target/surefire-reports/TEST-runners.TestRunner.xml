@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="5" failures="0" name="runners.TestRunner" time="5.259" errors="5" skipped="0">
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="runners.TestRunner" time="6.01" tests="5" errors="5" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="11.0.20+9-LTS-256"/>
@@ -21,8 +21,7 @@
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.io.tmpdir" value="C:\Users\giraw\AppData\Local\Temp\"/>
-    <property name="line.separator" value="
-"/>
+    <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
@@ -66,119 +65,17 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="Elegibilidade do cliente" name="Cliente elegível" time="5.054">
+  <testcase name="Cliente elegível" classname="Elegibilidade do cliente" time="4.052">
     <error message="Este host não é conhecido (teste)" type="java.net.UnknownHostException">java.net.UnknownHostException: Este host não é conhecido (teste)
-	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
-	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:929)
-	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1538)
-	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1527)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1380)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1302)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:263)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:162)
-	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
-	at io.restassured.internal.RestAssuredHttpBuilder.doRequest(RestAssuredHttpBuilder.java:141)
-	at io.restassured.internal.http.HTTPBuilder.post(HTTPBuilder.java:349)
-	at io.restassured.internal.http.HTTPBuilder$post$2.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:148)
-	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1209)
-	at io.restassured.internal.RequestSpecificationImpl.this$2$sendRequest(RequestSpecificationImpl.groovy)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
-	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1331)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1086)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1006)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:789)
-	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)
-	at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
-	at io.restassured.filter.Filter$filter.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
-	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-	at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
-	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-	at io.restassured.filter.Filter$filter.call(Unknown Source)
-	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-	at io.restassured.filter.FilterContext$next.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:148)
-	at io.restassured.internal.filter.CsrfFilter.filter(CsrfFilter.groovy:70)
-	at io.restassured.filter.Filter$filter.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:157)
-	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-	at io.restassured.filter.FilterContext$next.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:148)
-	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1704)
-	at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
-	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1331)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1086)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1006)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:789)
-	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
-	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1710)
-	at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
-	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1331)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1086)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1006)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:789)
-	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
-	at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy:176)
-	at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy)
-	at stepsDefinition.ClienteElegivelSteps.verificarElegibilidadeCliente(ClienteElegivelSteps.java:72)
-	at ✽.eu verifico a elegibilidade do cliente(file:///C:/Users/giraw/Documents/GitHub/DesafioAutomacaoAPI/DesafioAutomacaoAPI/src/test/resources/feature/ClienteElegivel.feature:9)
 </error>
-    <system-out>
-Scenario: Cliente elegÃ­vel                                  &amp;#27;[90m# src/test/resources/feature/ClienteElegivel.feature:8&amp;#27;[0m
-  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque o indicador cliente correntista Ã© &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;S&quot;&amp;#27;[0m           &amp;#27;[90m# stepsDefinition.ClienteElegivelSteps.indicadorClienteCorrentista(java.lang.String)&amp;#27;[0m
-  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mque o indicador conta ativa Ã© &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;S&quot;&amp;#27;[0m                     &amp;#27;[90m# stepsDefinition.ClienteElegivelSteps.indicadorContaAtiva(java.lang.String)&amp;#27;[0m
-  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mque o cÃ³digo tipo produto oferta Ã© &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;AB&quot;&amp;#27;[0m               &amp;#27;[90m# stepsDefinition.ClienteElegivelSteps.codigoTipoProdutoOferta(java.lang.String)&amp;#27;[0m
-  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mo cÃ³digo produto origem Ã© &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m1234&amp;#27;[0m                        &amp;#27;[90m# stepsDefinition.ClienteElegivelSteps.codigoProdutoOrigem(int)&amp;#27;[0m
-  &amp;#27;[31mWhen &amp;#27;[0m&amp;#27;[31meu verifico a elegibilidade do cliente&amp;#27;[0m               &amp;#27;[90m# stepsDefinition.ClienteElegivelSteps.verificarElegibilidadeCliente()&amp;#27;[0m
-      &amp;#27;[31mjava.net.UnknownHostException: Este host nÃ£o Ã© conhecido (teste)
+    <system-out><![CDATA[
+Scenario: Cliente elegÃ­vel                                  &amp#27;[90m# src/test/resources/feature/ClienteElegivel.feature:8&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mque o indicador cliente correntista Ã© &amp#27;[0m&amp#27;[32m&amp#27;[1m"S"&amp#27;[0m           &amp#27;[90m# stepsDefinition.ClienteElegivelSteps.indicadorClienteCorrentista(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mque o indicador conta ativa Ã© &amp#27;[0m&amp#27;[32m&amp#27;[1m"S"&amp#27;[0m                     &amp#27;[90m# stepsDefinition.ClienteElegivelSteps.indicadorContaAtiva(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mque o cÃ³digo tipo produto oferta Ã© &amp#27;[0m&amp#27;[32m&amp#27;[1m"AB"&amp#27;[0m               &amp#27;[90m# stepsDefinition.ClienteElegivelSteps.codigoTipoProdutoOferta(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mo cÃ³digo produto origem Ã© &amp#27;[0m&amp#27;[32m&amp#27;[1m1234&amp#27;[0m                        &amp#27;[90m# stepsDefinition.ClienteElegivelSteps.codigoProdutoOrigem(int)&amp#27;[0m
+  &amp#27;[31mWhen &amp#27;[0m&amp#27;[31meu verifico a elegibilidade do cliente&amp#27;[0m               &amp#27;[90m# stepsDefinition.ClienteElegivelSteps.verificarElegibilidadeCliente()&amp#27;[0m
+      &amp#27;[31mjava.net.UnknownHostException: Este host nÃ£o Ã© conhecido (teste)
 	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
 	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:929)
 	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1538)
@@ -281,105 +178,22 @@ Scenario: Cliente elegÃ­vel                                  &amp;#27;[90m# sr
 	at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy)
 	at stepsDefinition.ClienteElegivelSteps.verificarElegibilidadeCliente(ClienteElegivelSteps.java:72)
 	at âœ½.eu verifico a elegibilidade do cliente(file:///C:/Users/giraw/Documents/GitHub/DesafioAutomacaoAPI/DesafioAutomacaoAPI/src/test/resources/feature/ClienteElegivel.feature:9)
-&amp;#27;[0m
-  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mo indicador de elegibilidade do cliente deve ser &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;S&quot;&amp;#27;[0m &amp;#27;[90m# stepsDefinition.ClienteElegivelSteps.indicadorElegibilidadeCliente(java.lang.String)&amp;#27;[0m
-</system-out>
+&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mo indicador de elegibilidade do cliente deve ser &amp#27;[0m&amp#27;[36m&amp#27;[1m"S"&amp#27;[0m &amp#27;[90m# stepsDefinition.ClienteElegivelSteps.indicadorElegibilidadeCliente(java.lang.String)&amp#27;[0m
+]]></system-out>
   </testcase>
-  <testcase classname="Elegibilidade do cliente" name="Cliente não correntista" time="0.042">
+  <testcase name="Cliente não correntista" classname="Elegibilidade do cliente" time="0.276">
     <error message="teste" type="java.net.UnknownHostException">java.net.UnknownHostException: teste
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1527)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1380)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1302)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:263)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:162)
-	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
-	at io.restassured.internal.RestAssuredHttpBuilder.doRequest(RestAssuredHttpBuilder.java:141)
-	at io.restassured.internal.http.HTTPBuilder.post(HTTPBuilder.java:349)
-	at io.restassured.internal.http.HTTPBuilder$post$2.call(Unknown Source)
-	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1209)
-	at io.restassured.internal.RequestSpecificationImpl.this$2$sendRequest(RequestSpecificationImpl.groovy)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
-	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1331)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1086)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1006)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:789)
-	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)
-	at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
-	at io.restassured.filter.Filter$filter.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
-	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-	at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
-	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-	at io.restassured.filter.Filter$filter.call(Unknown Source)
-	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-	at io.restassured.filter.FilterContext$next.call(Unknown Source)
-	at io.restassured.internal.filter.CsrfFilter.filter(CsrfFilter.groovy:70)
-	at io.restassured.filter.Filter$filter.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-	at io.restassured.filter.Filter$filter.call(Unknown Source)
-	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-	at io.restassured.filter.FilterContext$next.call(Unknown Source)
-	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1704)
-	at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
-	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1331)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1086)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1006)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:789)
-	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
-	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1710)
-	at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
-	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1331)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1086)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1006)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:789)
-	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
-	at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy:176)
-	at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy)
-	at stepsDefinition.ClienteElegivelSteps.verificarElegibilidadeCliente(ClienteElegivelSteps.java:72)
-	at ✽.eu verifico a elegibilidade do cliente(file:///C:/Users/giraw/Documents/GitHub/DesafioAutomacaoAPI/DesafioAutomacaoAPI/src/test/resources/feature/ClienteElegivel.feature:14)
 </error>
-    <system-out>
-Scenario: Cliente nÃ£o correntista                           &amp;#27;[90m# src/test/resources/feature/ClienteElegivel.feature:12&amp;#27;[0m
-  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque o indicador cliente correntista Ã© &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;S&quot;&amp;#27;[0m           &amp;#27;[90m# stepsDefinition.ClienteElegivelSteps.indicadorClienteCorrentista(java.lang.String)&amp;#27;[0m
-  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mque o indicador conta ativa Ã© &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;S&quot;&amp;#27;[0m                     &amp;#27;[90m# stepsDefinition.ClienteElegivelSteps.indicadorContaAtiva(java.lang.String)&amp;#27;[0m
-  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mque o cÃ³digo tipo produto oferta Ã© &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;AB&quot;&amp;#27;[0m               &amp;#27;[90m# stepsDefinition.ClienteElegivelSteps.codigoTipoProdutoOferta(java.lang.String)&amp;#27;[0m
-  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mo cÃ³digo produto origem Ã© &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m1234&amp;#27;[0m                        &amp;#27;[90m# stepsDefinition.ClienteElegivelSteps.codigoProdutoOrigem(int)&amp;#27;[0m
-  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque o indicador cliente correntista Ã© &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;N&quot;&amp;#27;[0m           &amp;#27;[90m# stepsDefinition.ClienteElegivelSteps.indicadorClienteCorrentista(java.lang.String)&amp;#27;[0m
-  &amp;#27;[31mWhen &amp;#27;[0m&amp;#27;[31meu verifico a elegibilidade do cliente&amp;#27;[0m               &amp;#27;[90m# stepsDefinition.ClienteElegivelSteps.verificarElegibilidadeCliente()&amp;#27;[0m
-      &amp;#27;[31mjava.net.UnknownHostException: teste
+    <system-out><![CDATA[
+Scenario: Cliente nÃ£o correntista                           &amp#27;[90m# src/test/resources/feature/ClienteElegivel.feature:12&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mque o indicador cliente correntista Ã© &amp#27;[0m&amp#27;[32m&amp#27;[1m"S"&amp#27;[0m           &amp#27;[90m# stepsDefinition.ClienteElegivelSteps.indicadorClienteCorrentista(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mque o indicador conta ativa Ã© &amp#27;[0m&amp#27;[32m&amp#27;[1m"S"&amp#27;[0m                     &amp#27;[90m# stepsDefinition.ClienteElegivelSteps.indicadorContaAtiva(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mque o cÃ³digo tipo produto oferta Ã© &amp#27;[0m&amp#27;[32m&amp#27;[1m"AB"&amp#27;[0m               &amp#27;[90m# stepsDefinition.ClienteElegivelSteps.codigoTipoProdutoOferta(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mo cÃ³digo produto origem Ã© &amp#27;[0m&amp#27;[32m&amp#27;[1m1234&amp#27;[0m                        &amp#27;[90m# stepsDefinition.ClienteElegivelSteps.codigoProdutoOrigem(int)&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mque o indicador cliente correntista Ã© &amp#27;[0m&amp#27;[32m&amp#27;[1m"N"&amp#27;[0m           &amp#27;[90m# stepsDefinition.ClienteElegivelSteps.indicadorClienteCorrentista(java.lang.String)&amp#27;[0m
+  &amp#27;[31mWhen &amp#27;[0m&amp#27;[31meu verifico a elegibilidade do cliente&amp#27;[0m               &amp#27;[90m# stepsDefinition.ClienteElegivelSteps.verificarElegibilidadeCliente()&amp#27;[0m
+      &amp#27;[31mjava.net.UnknownHostException: teste
 	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
 	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1527)
 	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1380)
@@ -463,105 +277,22 @@ Scenario: Cliente nÃ£o correntista                           &amp;#27;[90m# sr
 	at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy)
 	at stepsDefinition.ClienteElegivelSteps.verificarElegibilidadeCliente(ClienteElegivelSteps.java:72)
 	at âœ½.eu verifico a elegibilidade do cliente(file:///C:/Users/giraw/Documents/GitHub/DesafioAutomacaoAPI/DesafioAutomacaoAPI/src/test/resources/feature/ClienteElegivel.feature:14)
-&amp;#27;[0m
-  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mo indicador de elegibilidade do cliente deve ser &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;N&quot;&amp;#27;[0m &amp;#27;[90m# stepsDefinition.ClienteElegivelSteps.indicadorElegibilidadeCliente(java.lang.String)&amp;#27;[0m
-</system-out>
+&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mo indicador de elegibilidade do cliente deve ser &amp#27;[0m&amp#27;[36m&amp#27;[1m"N"&amp#27;[0m &amp#27;[90m# stepsDefinition.ClienteElegivelSteps.indicadorElegibilidadeCliente(java.lang.String)&amp#27;[0m
+]]></system-out>
   </testcase>
-  <testcase classname="Elegibilidade do cliente" name="Cliente com conta não ativa" time="0.065">
+  <testcase name="Cliente com conta não ativa" classname="Elegibilidade do cliente" time="0.281">
     <error message="teste" type="java.net.UnknownHostException">java.net.UnknownHostException: teste
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1527)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1380)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1302)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:263)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:162)
-	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
-	at io.restassured.internal.RestAssuredHttpBuilder.doRequest(RestAssuredHttpBuilder.java:141)
-	at io.restassured.internal.http.HTTPBuilder.post(HTTPBuilder.java:349)
-	at io.restassured.internal.http.HTTPBuilder$post$2.call(Unknown Source)
-	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1209)
-	at io.restassured.internal.RequestSpecificationImpl.this$2$sendRequest(RequestSpecificationImpl.groovy)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
-	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1331)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1086)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1006)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:789)
-	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)
-	at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
-	at io.restassured.filter.Filter$filter.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
-	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-	at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
-	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-	at io.restassured.filter.Filter$filter.call(Unknown Source)
-	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-	at io.restassured.filter.FilterContext$next.call(Unknown Source)
-	at io.restassured.internal.filter.CsrfFilter.filter(CsrfFilter.groovy:70)
-	at io.restassured.filter.Filter$filter.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-	at io.restassured.filter.Filter$filter.call(Unknown Source)
-	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-	at io.restassured.filter.FilterContext$next.call(Unknown Source)
-	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1704)
-	at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
-	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1331)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1086)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1006)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:789)
-	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
-	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1710)
-	at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
-	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1331)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1086)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1006)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:789)
-	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
-	at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy:176)
-	at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy)
-	at stepsDefinition.ClienteElegivelSteps.verificarElegibilidadeCliente(ClienteElegivelSteps.java:72)
-	at ✽.eu verifico a elegibilidade do cliente(file:///C:/Users/giraw/Documents/GitHub/DesafioAutomacaoAPI/DesafioAutomacaoAPI/src/test/resources/feature/ClienteElegivel.feature:19)
 </error>
-    <system-out>
-Scenario: Cliente com conta nÃ£o ativa                       &amp;#27;[90m# src/test/resources/feature/ClienteElegivel.feature:17&amp;#27;[0m
-  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque o indicador cliente correntista Ã© &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;S&quot;&amp;#27;[0m           &amp;#27;[90m# stepsDefinition.ClienteElegivelSteps.indicadorClienteCorrentista(java.lang.String)&amp;#27;[0m
-  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mque o indicador conta ativa Ã© &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;S&quot;&amp;#27;[0m                     &amp;#27;[90m# stepsDefinition.ClienteElegivelSteps.indicadorContaAtiva(java.lang.String)&amp;#27;[0m
-  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mque o cÃ³digo tipo produto oferta Ã© &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;AB&quot;&amp;#27;[0m               &amp;#27;[90m# stepsDefinition.ClienteElegivelSteps.codigoTipoProdutoOferta(java.lang.String)&amp;#27;[0m
-  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mo cÃ³digo produto origem Ã© &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m1234&amp;#27;[0m                        &amp;#27;[90m# stepsDefinition.ClienteElegivelSteps.codigoProdutoOrigem(int)&amp;#27;[0m
-  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque o indicador conta ativa Ã© &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;N&quot;&amp;#27;[0m                   &amp;#27;[90m# stepsDefinition.ClienteElegivelSteps.indicadorContaAtiva(java.lang.String)&amp;#27;[0m
-  &amp;#27;[31mWhen &amp;#27;[0m&amp;#27;[31meu verifico a elegibilidade do cliente&amp;#27;[0m               &amp;#27;[90m# stepsDefinition.ClienteElegivelSteps.verificarElegibilidadeCliente()&amp;#27;[0m
-      &amp;#27;[31mjava.net.UnknownHostException: teste
+    <system-out><![CDATA[
+Scenario: Cliente com conta nÃ£o ativa                       &amp#27;[90m# src/test/resources/feature/ClienteElegivel.feature:17&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mque o indicador cliente correntista Ã© &amp#27;[0m&amp#27;[32m&amp#27;[1m"S"&amp#27;[0m           &amp#27;[90m# stepsDefinition.ClienteElegivelSteps.indicadorClienteCorrentista(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mque o indicador conta ativa Ã© &amp#27;[0m&amp#27;[32m&amp#27;[1m"S"&amp#27;[0m                     &amp#27;[90m# stepsDefinition.ClienteElegivelSteps.indicadorContaAtiva(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mque o cÃ³digo tipo produto oferta Ã© &amp#27;[0m&amp#27;[32m&amp#27;[1m"AB"&amp#27;[0m               &amp#27;[90m# stepsDefinition.ClienteElegivelSteps.codigoTipoProdutoOferta(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mo cÃ³digo produto origem Ã© &amp#27;[0m&amp#27;[32m&amp#27;[1m1234&amp#27;[0m                        &amp#27;[90m# stepsDefinition.ClienteElegivelSteps.codigoProdutoOrigem(int)&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mque o indicador conta ativa Ã© &amp#27;[0m&amp#27;[32m&amp#27;[1m"N"&amp#27;[0m                   &amp#27;[90m# stepsDefinition.ClienteElegivelSteps.indicadorContaAtiva(java.lang.String)&amp#27;[0m
+  &amp#27;[31mWhen &amp#27;[0m&amp#27;[31meu verifico a elegibilidade do cliente&amp#27;[0m               &amp#27;[90m# stepsDefinition.ClienteElegivelSteps.verificarElegibilidadeCliente()&amp#27;[0m
+      &amp#27;[31mjava.net.UnknownHostException: teste
 	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
 	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1527)
 	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1380)
@@ -645,105 +376,22 @@ Scenario: Cliente com conta nÃ£o ativa                       &amp;#27;[90m# sr
 	at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy)
 	at stepsDefinition.ClienteElegivelSteps.verificarElegibilidadeCliente(ClienteElegivelSteps.java:72)
 	at âœ½.eu verifico a elegibilidade do cliente(file:///C:/Users/giraw/Documents/GitHub/DesafioAutomacaoAPI/DesafioAutomacaoAPI/src/test/resources/feature/ClienteElegivel.feature:19)
-&amp;#27;[0m
-  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mo indicador de elegibilidade do cliente deve ser &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;N&quot;&amp;#27;[0m &amp;#27;[90m# stepsDefinition.ClienteElegivelSteps.indicadorElegibilidadeCliente(java.lang.String)&amp;#27;[0m
-</system-out>
+&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mo indicador de elegibilidade do cliente deve ser &amp#27;[0m&amp#27;[36m&amp#27;[1m"N"&amp#27;[0m &amp#27;[90m# stepsDefinition.ClienteElegivelSteps.indicadorElegibilidadeCliente(java.lang.String)&amp#27;[0m
+]]></system-out>
   </testcase>
-  <testcase classname="Elegibilidade do cliente" name="Cliente com tipo de produto oferta não elegível" time="0.048">
+  <testcase name="Cliente com tipo de produto oferta não elegível" classname="Elegibilidade do cliente" time="0.259">
     <error message="teste" type="java.net.UnknownHostException">java.net.UnknownHostException: teste
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1527)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1380)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1302)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:263)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:162)
-	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
-	at io.restassured.internal.RestAssuredHttpBuilder.doRequest(RestAssuredHttpBuilder.java:141)
-	at io.restassured.internal.http.HTTPBuilder.post(HTTPBuilder.java:349)
-	at io.restassured.internal.http.HTTPBuilder$post$2.call(Unknown Source)
-	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1209)
-	at io.restassured.internal.RequestSpecificationImpl.this$2$sendRequest(RequestSpecificationImpl.groovy)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
-	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1331)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1086)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1006)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:789)
-	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)
-	at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
-	at io.restassured.filter.Filter$filter.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
-	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-	at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
-	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-	at io.restassured.filter.Filter$filter.call(Unknown Source)
-	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-	at io.restassured.filter.FilterContext$next.call(Unknown Source)
-	at io.restassured.internal.filter.CsrfFilter.filter(CsrfFilter.groovy:70)
-	at io.restassured.filter.Filter$filter.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-	at io.restassured.filter.Filter$filter.call(Unknown Source)
-	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-	at io.restassured.filter.FilterContext$next.call(Unknown Source)
-	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1704)
-	at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
-	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1331)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1086)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1006)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:789)
-	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
-	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1710)
-	at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
-	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1331)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1086)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1006)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:789)
-	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
-	at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy:176)
-	at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy)
-	at stepsDefinition.ClienteElegivelSteps.verificarElegibilidadeCliente(ClienteElegivelSteps.java:72)
-	at ✽.eu verifico a elegibilidade do cliente(file:///C:/Users/giraw/Documents/GitHub/DesafioAutomacaoAPI/DesafioAutomacaoAPI/src/test/resources/feature/ClienteElegivel.feature:24)
 </error>
-    <system-out>
-Scenario: Cliente com tipo de produto oferta nÃ£o elegÃ­vel   &amp;#27;[90m# src/test/resources/feature/ClienteElegivel.feature:22&amp;#27;[0m
-  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque o indicador cliente correntista Ã© &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;S&quot;&amp;#27;[0m           &amp;#27;[90m# stepsDefinition.ClienteElegivelSteps.indicadorClienteCorrentista(java.lang.String)&amp;#27;[0m
-  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mque o indicador conta ativa Ã© &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;S&quot;&amp;#27;[0m                     &amp;#27;[90m# stepsDefinition.ClienteElegivelSteps.indicadorContaAtiva(java.lang.String)&amp;#27;[0m
-  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mque o cÃ³digo tipo produto oferta Ã© &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;AB&quot;&amp;#27;[0m               &amp;#27;[90m# stepsDefinition.ClienteElegivelSteps.codigoTipoProdutoOferta(java.lang.String)&amp;#27;[0m
-  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mo cÃ³digo produto origem Ã© &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m1234&amp;#27;[0m                        &amp;#27;[90m# stepsDefinition.ClienteElegivelSteps.codigoProdutoOrigem(int)&amp;#27;[0m
-  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque o cÃ³digo tipo produto oferta Ã© &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;CC&quot;&amp;#27;[0m             &amp;#27;[90m# stepsDefinition.ClienteElegivelSteps.codigoTipoProdutoOferta(java.lang.String)&amp;#27;[0m
-  &amp;#27;[31mWhen &amp;#27;[0m&amp;#27;[31meu verifico a elegibilidade do cliente&amp;#27;[0m               &amp;#27;[90m# stepsDefinition.ClienteElegivelSteps.verificarElegibilidadeCliente()&amp;#27;[0m
-      &amp;#27;[31mjava.net.UnknownHostException: teste
+    <system-out><![CDATA[
+Scenario: Cliente com tipo de produto oferta nÃ£o elegÃ­vel   &amp#27;[90m# src/test/resources/feature/ClienteElegivel.feature:22&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mque o indicador cliente correntista Ã© &amp#27;[0m&amp#27;[32m&amp#27;[1m"S"&amp#27;[0m           &amp#27;[90m# stepsDefinition.ClienteElegivelSteps.indicadorClienteCorrentista(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mque o indicador conta ativa Ã© &amp#27;[0m&amp#27;[32m&amp#27;[1m"S"&amp#27;[0m                     &amp#27;[90m# stepsDefinition.ClienteElegivelSteps.indicadorContaAtiva(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mque o cÃ³digo tipo produto oferta Ã© &amp#27;[0m&amp#27;[32m&amp#27;[1m"AB"&amp#27;[0m               &amp#27;[90m# stepsDefinition.ClienteElegivelSteps.codigoTipoProdutoOferta(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mo cÃ³digo produto origem Ã© &amp#27;[0m&amp#27;[32m&amp#27;[1m1234&amp#27;[0m                        &amp#27;[90m# stepsDefinition.ClienteElegivelSteps.codigoProdutoOrigem(int)&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mque o cÃ³digo tipo produto oferta Ã© &amp#27;[0m&amp#27;[32m&amp#27;[1m"CC"&amp#27;[0m             &amp#27;[90m# stepsDefinition.ClienteElegivelSteps.codigoTipoProdutoOferta(java.lang.String)&amp#27;[0m
+  &amp#27;[31mWhen &amp#27;[0m&amp#27;[31meu verifico a elegibilidade do cliente&amp#27;[0m               &amp#27;[90m# stepsDefinition.ClienteElegivelSteps.verificarElegibilidadeCliente()&amp#27;[0m
+      &amp#27;[31mjava.net.UnknownHostException: teste
 	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
 	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1527)
 	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1380)
@@ -827,106 +475,23 @@ Scenario: Cliente com tipo de produto oferta nÃ£o elegÃ­vel   &amp;#27;[90m#
 	at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy)
 	at stepsDefinition.ClienteElegivelSteps.verificarElegibilidadeCliente(ClienteElegivelSteps.java:72)
 	at âœ½.eu verifico a elegibilidade do cliente(file:///C:/Users/giraw/Documents/GitHub/DesafioAutomacaoAPI/DesafioAutomacaoAPI/src/test/resources/feature/ClienteElegivel.feature:24)
-&amp;#27;[0m
-  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mo indicador de elegibilidade do cliente deve ser &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;N&quot;&amp;#27;[0m &amp;#27;[90m# stepsDefinition.ClienteElegivelSteps.indicadorElegibilidadeCliente(java.lang.String)&amp;#27;[0m
-</system-out>
+&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mo indicador de elegibilidade do cliente deve ser &amp#27;[0m&amp#27;[36m&amp#27;[1m"N"&amp#27;[0m &amp#27;[90m# stepsDefinition.ClienteElegivelSteps.indicadorElegibilidadeCliente(java.lang.String)&amp#27;[0m
+]]></system-out>
   </testcase>
-  <testcase classname="Elegibilidade do cliente" name="Cliente com tipo de produto origem não elegível" time="0.05">
+  <testcase name="Cliente com tipo de produto origem não elegível" classname="Elegibilidade do cliente" time="0.263">
     <error message="teste" type="java.net.UnknownHostException">java.net.UnknownHostException: teste
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1527)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1380)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1302)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:263)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:162)
-	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
-	at io.restassured.internal.RestAssuredHttpBuilder.doRequest(RestAssuredHttpBuilder.java:141)
-	at io.restassured.internal.http.HTTPBuilder.post(HTTPBuilder.java:349)
-	at io.restassured.internal.http.HTTPBuilder$post$2.call(Unknown Source)
-	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1209)
-	at io.restassured.internal.RequestSpecificationImpl.this$2$sendRequest(RequestSpecificationImpl.groovy)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
-	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1331)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1086)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1006)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:789)
-	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)
-	at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
-	at io.restassured.filter.Filter$filter.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
-	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-	at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
-	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-	at io.restassured.filter.Filter$filter.call(Unknown Source)
-	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-	at io.restassured.filter.FilterContext$next.call(Unknown Source)
-	at io.restassured.internal.filter.CsrfFilter.filter(CsrfFilter.groovy:70)
-	at io.restassured.filter.Filter$filter.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-	at io.restassured.filter.Filter$filter.call(Unknown Source)
-	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-	at io.restassured.filter.FilterContext$next.call(Unknown Source)
-	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1704)
-	at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
-	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1331)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1086)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1006)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:789)
-	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
-	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1710)
-	at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
-	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1331)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1086)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1006)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:789)
-	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
-	at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy:176)
-	at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy)
-	at stepsDefinition.ClienteElegivelSteps.verificarElegibilidadeCliente(ClienteElegivelSteps.java:72)
-	at ✽.eu verifico a elegibilidade do cliente(file:///C:/Users/giraw/Documents/GitHub/DesafioAutomacaoAPI/DesafioAutomacaoAPI/src/test/resources/feature/ClienteElegivel.feature:30)
 </error>
-    <system-out>
-Scenario: Cliente com tipo de produto origem nÃ£o elegÃ­vel   &amp;#27;[90m# src/test/resources/feature/ClienteElegivel.feature:27&amp;#27;[0m
-  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque o indicador cliente correntista Ã© &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;S&quot;&amp;#27;[0m           &amp;#27;[90m# stepsDefinition.ClienteElegivelSteps.indicadorClienteCorrentista(java.lang.String)&amp;#27;[0m
-  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mque o indicador conta ativa Ã© &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;S&quot;&amp;#27;[0m                     &amp;#27;[90m# stepsDefinition.ClienteElegivelSteps.indicadorContaAtiva(java.lang.String)&amp;#27;[0m
-  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mque o cÃ³digo tipo produto oferta Ã© &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;AB&quot;&amp;#27;[0m               &amp;#27;[90m# stepsDefinition.ClienteElegivelSteps.codigoTipoProdutoOferta(java.lang.String)&amp;#27;[0m
-  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mo cÃ³digo produto origem Ã© &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m1234&amp;#27;[0m                        &amp;#27;[90m# stepsDefinition.ClienteElegivelSteps.codigoProdutoOrigem(int)&amp;#27;[0m
-  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque o cÃ³digo tipo produto oferta Ã© &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;CC&quot;&amp;#27;[0m             &amp;#27;[90m# stepsDefinition.ClienteElegivelSteps.codigoTipoProdutoOferta(java.lang.String)&amp;#27;[0m
-  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mo cÃ³digo produto origem Ã© &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m5555&amp;#27;[0m                        &amp;#27;[90m# stepsDefinition.ClienteElegivelSteps.codigoProdutoOrigem(int)&amp;#27;[0m
-  &amp;#27;[31mWhen &amp;#27;[0m&amp;#27;[31meu verifico a elegibilidade do cliente&amp;#27;[0m               &amp;#27;[90m# stepsDefinition.ClienteElegivelSteps.verificarElegibilidadeCliente()&amp;#27;[0m
-      &amp;#27;[31mjava.net.UnknownHostException: teste
+    <system-out><![CDATA[
+Scenario: Cliente com tipo de produto origem nÃ£o elegÃ­vel   &amp#27;[90m# src/test/resources/feature/ClienteElegivel.feature:27&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mque o indicador cliente correntista Ã© &amp#27;[0m&amp#27;[32m&amp#27;[1m"S"&amp#27;[0m           &amp#27;[90m# stepsDefinition.ClienteElegivelSteps.indicadorClienteCorrentista(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mque o indicador conta ativa Ã© &amp#27;[0m&amp#27;[32m&amp#27;[1m"S"&amp#27;[0m                     &amp#27;[90m# stepsDefinition.ClienteElegivelSteps.indicadorContaAtiva(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mque o cÃ³digo tipo produto oferta Ã© &amp#27;[0m&amp#27;[32m&amp#27;[1m"AB"&amp#27;[0m               &amp#27;[90m# stepsDefinition.ClienteElegivelSteps.codigoTipoProdutoOferta(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mo cÃ³digo produto origem Ã© &amp#27;[0m&amp#27;[32m&amp#27;[1m1234&amp#27;[0m                        &amp#27;[90m# stepsDefinition.ClienteElegivelSteps.codigoProdutoOrigem(int)&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mque o cÃ³digo tipo produto oferta Ã© &amp#27;[0m&amp#27;[32m&amp#27;[1m"CC"&amp#27;[0m             &amp#27;[90m# stepsDefinition.ClienteElegivelSteps.codigoTipoProdutoOferta(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mo cÃ³digo produto origem Ã© &amp#27;[0m&amp#27;[32m&amp#27;[1m5555&amp#27;[0m                        &amp#27;[90m# stepsDefinition.ClienteElegivelSteps.codigoProdutoOrigem(int)&amp#27;[0m
+  &amp#27;[31mWhen &amp#27;[0m&amp#27;[31meu verifico a elegibilidade do cliente&amp#27;[0m               &amp#27;[90m# stepsDefinition.ClienteElegivelSteps.verificarElegibilidadeCliente()&amp#27;[0m
+      &amp#27;[31mjava.net.UnknownHostException: teste
 	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
 	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1527)
 	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1380)
@@ -1010,8 +575,8 @@ Scenario: Cliente com tipo de produto origem nÃ£o elegÃ­vel   &amp;#27;[90m#
 	at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy)
 	at stepsDefinition.ClienteElegivelSteps.verificarElegibilidadeCliente(ClienteElegivelSteps.java:72)
 	at âœ½.eu verifico a elegibilidade do cliente(file:///C:/Users/giraw/Documents/GitHub/DesafioAutomacaoAPI/DesafioAutomacaoAPI/src/test/resources/feature/ClienteElegivel.feature:30)
-&amp;#27;[0m
-  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mo indicador de elegibilidade do cliente deve ser &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;N&quot;&amp;#27;[0m &amp;#27;[90m# stepsDefinition.ClienteElegivelSteps.indicadorElegibilidadeCliente(java.lang.String)&amp;#27;[0m
-</system-out>
+&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mo indicador de elegibilidade do cliente deve ser &amp#27;[0m&amp#27;[36m&amp#27;[1m"N"&amp#27;[0m &amp#27;[90m# stepsDefinition.ClienteElegivelSteps.indicadorElegibilidadeCliente(java.lang.String)&amp#27;[0m
+]]></system-out>
   </testcase>
 </testsuite>
