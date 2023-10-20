@@ -18,12 +18,12 @@ jobs:
         java-version: '11'  # Use a versão do JDK necessária para o projeto
         distribution: 'adopt'
 
-    - name: Install Maven  # Passo para instalar o Maven (gerenciador de pacotes)
-      run: |
-        sudo apt update
-        sudo apt install maven
+    - name: Build with Maven
+      run: mvn clean install
+      
     - name: List Directory Contents
       run: ls -la
+      
     - name: Run API Tests  # Passo para executar os testes de API
       run: mvn test  # Este comando deve ser ajustado com o comando real para executar os testes em seu projeto
 
