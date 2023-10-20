@@ -17,7 +17,11 @@ jobs:
       with:
         java-version: '11'  # Use a versão do JDK necessária para o projeto
         distribution: 'adopt'
-
+    - name: Install Maven
+      run: |
+        sudo apt update
+        sudo apt install maven
+        
     - name: Build with Maven
       run: mvn clean install
       
